@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>com.geiconsultants.gradle.properties.plugin</id>
+    <id>com.geiconsultants.close.tab.without.breakpoints.plugin</id>
     <name>Close Tabs Without Breakpoints</name>
     <vendor email="adam@rmanet.com">GEI Consultants</vendor>
     <depends>com.intellij.modules.platform</depends>
