@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.geiconsultants.gradle.properties.plugin</id>
+    <name>Close Tabs Without Breakpoints</name>
+    <vendor email="adam@rmanet.com">GEI Consultants</vendor>
+    <depends>com.intellij.modules.platform</depends>
+    <description><![CDATA[
+      Provides an action to manage editor tabs based on active debug breakpoints.
+      This plugin adds a "Close Tabs Without Breakpoints" option to the editor tab
+      context menu, allowing users to quickly close all open files except those
+      containing active line breakpoints.
+    ]]></description>
+    <actions>
+        <action id="com.geiconsultants.CloseTabsWithoutBreakpoints"
+                class="com.geiconsultants.intellij.close.tabs.CloseTabsWithoutBreakpointsAction"
+                text="Close Tabs Without _Breakpoints"
+                description="Closes all editor tabs that do not contain any breakpoints">
+            <add-to-group
+                    group-id="CloseEditorsGroup"
+                    anchor="after"
+                    relative-to-action="CloseAllEditors"/>
+        </action>
+    </actions>
+</idea-plugin>
